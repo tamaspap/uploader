@@ -91,13 +91,16 @@ window.Uploader = (function ($, window) {
              * The css classes that will be added to the select button and the drop zone on different events
              */
             cssClasses: {
-			
+
+                // Select button container
+                selectButtonContainer:  'uploader-ui-select-button-container',
+
                 // Select button
-                selectButtonHover:  'uploader-ui-select-button-hover',
-                selectButtonFocus:  'uploader-ui-select-button-focus',
+                selectButtonHover:      'uploader-ui-select-button-hover',
+                selectButtonFocus:      'uploader-ui-select-button-focus',
 				
                 // Drop zone
-                dropZoneDragOver:   'uploader-ui-drop-zone-drag-over'
+                dropZoneDragOver:       'uploader-ui-drop-zone-drag-over'
             },
 
             // Error messages
@@ -245,7 +248,7 @@ window.Uploader = (function (Uploader, $) {
                 border: 'none',
                 background: '#ffffff',
                 opacity: 0
-            });
+            }).addClass(this.options.cssClasses.selectButtonContainer);
 
             // Position the container over the select button
             this.positionContainer();
@@ -292,12 +295,12 @@ window.Uploader = (function (Uploader, $) {
         positionContainer: function() {
 
             // Get the select button's position
-            var pos = this.selectButtonElement.position();
+            var offset = this.selectButtonElement.offset();
 
             this.containerElement.css({
                 position: 'absolute',
-                left:   pos.left + 'px',
-                top:    pos.top + 'px'
+                left:   offset.left + 'px',
+                top:    offset.top + 'px'
             });
         },
 
