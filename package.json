@@ -1,0 +1,16 @@
+{
+  "name": "UploaderJS",
+  "version": "0.9.0",
+  "description": "Cross browser file uploading made easy.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+	  "grunt": "~0.4.5",
+      "grunt-contrib-concat":   "~0.4.0",
+      "grunt-contrib-uglify":   "~0.4.0",
+      "grunt-contrib-jshint":   "~0.10.0",
+      "grunt-contrib-watch":    "~0.6.1"
+  }
+}
