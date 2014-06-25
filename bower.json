@@ -1,0 +1,12 @@
+{
+    "name": "UploaderJS",
+    "version": "0.9.0",
+    "main": "uploader.js",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "package.json",
+        ".gitignore"
+    ]
+}
