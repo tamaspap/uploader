@@ -508,8 +508,10 @@
          */
         destroy: function() {
 
-            // Delete all event handlers
-            delete this.eventHandlers;
+            // off all event handlers
+            for (var eh in this.eventHandlers){
+                this.off(eh);
+            }
 
             // Remove the drop zone's event handlers
             if (this.$dropZone) {
