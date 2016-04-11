@@ -5,9 +5,6 @@
 
     $.extend(Uploader.prototype, {
 
-        // List of event handlers.
-        eventHandlers: {},
-
         /**
          * One or more files were selected by the user.
          */

@@ -197,9 +197,6 @@
 
     $.extend(Uploader.prototype, {
 
-        // Options
-        options: {},
-
         /**
          * Init uploader instance.
          *
@@ -246,6 +243,9 @@
 
             // Init the file count (this number must not exceed the `this.options.maxFiles` value).
             this.fileCount = 0;
+
+            // Init the list of event listeners
+            this.eventHandlers = {};
 
             // Init elements.
             this.initElements();
@@ -350,9 +350,6 @@
     "use strict";
 
     $.extend(Uploader.prototype, {
-
-        // List of event handlers.
-        eventHandlers: {},
 
         /**
          * One or more files were selected by the user.
