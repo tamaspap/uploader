@@ -48,6 +48,11 @@
             dropZone: null,
 
             /**
+             * ID of the file input.
+             */
+            id: null,
+
+            /**
              * Name of the file input.
              */
             name: "file",
@@ -282,6 +287,7 @@
             // Create the file input
             this.$fileInput = $("<input/>", {
                 name: this.options.name,
+                id: this.options.id,
                 accept: (this.options.acceptType || []).join(),
                 type: "file"
             }).appendTo(this.$selectButton);
