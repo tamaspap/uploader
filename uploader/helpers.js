@@ -66,7 +66,7 @@
          */
         getFileExtension: function(fileName) {
             var parts = fileName.split(".");
-            return (parts.length > 1) ? parts.pop() : "";
+            return (parts.length > 1) ? parts.pop().toLowerCase() : "";
         },
 
         /**
