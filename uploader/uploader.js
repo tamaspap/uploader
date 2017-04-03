@@ -48,6 +48,11 @@
             dropZone: null,
 
             /**
+             * ID of the file input.
+             */
+            id: null,
+
+            /**
              * Name of the file input.
              */
             name: "file",
