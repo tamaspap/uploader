@@ -1,5 +1,5 @@
 /**
- * UploaderJS v0.9.0
+ * UploaderJS v0.9.3
  * https://github.com/tamaspap/uploader
  *
  * Copyright 2014, Pap Tamas
