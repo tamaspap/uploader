@@ -1,6 +1,6 @@
 {
   "name": "UploaderJS",
-  "version": "0.9.0",
+  "version": "0.9.3",
   "description": "Cross browser file uploading made easy.",
   "main": "Gruntfile.js",
   "scripts": {

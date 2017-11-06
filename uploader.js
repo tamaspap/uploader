@@ -1,5 +1,5 @@
 /**
- * UploaderJS v0.9.0
+ * UploaderJS v0.9.3
  * https://github.com/tamaspap/uploader
  *
  * Copyright 2014, Pap Tamas
@@ -817,8 +817,7 @@
 
 
             // Check if file type is accepted
-            if (allowedExtensions && $.inArray("." + fileExtension, allowedExtensions) < 0) {
-
+            if (allowedExtensions && !new RegExp('\.'+ fileExtension, 'i').test(allowedExtensions.join())) {
                 // Invalid file type
                 errors.push({
                     code: 1,

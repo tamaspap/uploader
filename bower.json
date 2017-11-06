@@ -1,6 +1,6 @@
 {
     "name": "UploaderJS",
-    "version": "0.9.0",
+    "version": "0.9.3",
     "main": "uploader.js",
     "ignore": [
         "**/.*",

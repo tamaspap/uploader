@@ -126,8 +126,7 @@
 
 
             // Check if file type is accepted
-            if (allowedExtensions && $.inArray("." + fileExtension, allowedExtensions) < 0) {
-
+            if (allowedExtensions && !new RegExp('\.'+ fileExtension, 'i').test(allowedExtensions.join())) {
                 // Invalid file type
                 errors.push({
                     code: 1,
